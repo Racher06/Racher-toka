@@ -1,38 +1,30 @@
 # Racher Toka - FiveM Lua Script
 
-## Description
+## Açıklama
 
-Toka Script is a simple FiveM script that allows players to change their hairstyle in-game using a command. The script toggles between the player's current hairstyle and a predefined new style when the /toka command is issued.
-## Features
-Hairstyle Switching: Players can switch their hairstyle by using the /toka command.
-Memory of Previous Style: The script remembers the player's original hairstyle and texture, allowing toggling between the original and the new style.
-Configurable Settings: Hairstyles and textures can be configured through a config.lua file.
+Toka Script, oyuncuların oyun içinde bir komut kullanarak saç stilini değiştirmelerine olanak tanıyan basit bir FiveM betiğidir. Betik, oyuncu `/toka` komutunu kullandığında, mevcut saç stili ile önceden tanımlanmış yeni bir stil arasında geçiş yapar.
 
-## Installation
+## Özellikler
 
-Download or Clone this repository.
-Place the toka folder in your server's resources directory.
-Add the following line to your server.cfg file:
-sql
-Kodu kopyala
+- **Saç Stili Değiştirme**: Oyuncular `/toka` komutunu kullanarak saç stillerini değiştirebilir.
+- **Önceki Stilin Hatırlanması**: Betik, oyuncunun orijinal saç stilini ve dokusunu hatırlayarak orijinal ve yeni stil arasında geçiş yapma olanağı sağlar.
+- **Yapılandırılabilir Ayarlar**: Saç stilleri ve dokuları `config.lua` dosyası aracılığıyla yapılandırılabilir.
+
+## Kurulum
+
+1. Bu depoyu indirin veya klonlayın.
+2. `toka` klasörünü sunucunuzun `resources` dizinine yerleştirin.
+3. `server.cfg` dosyasına şu satırı ekleyin:
 start toka
-Configure the hairstyles in the config.lua file according to your needs.
 
-## Configuration
+lua
+Kodu kopyala
+4. Saç stillerini ihtiyaçlarınıza göre `config.lua` dosyasında yapılandırın.
+
+## Yapılandırma
 
 ```lua
-
-
 Config = {}
 
-Config.DefaultHairMale = 1 -- erkekler için oluşacak saç
-Config.DefaultHairFemale = 0 -- kadınlar için oluşacak saç
-
-
-```
-
-
-
-
-
-
+Config.DefaultHairMale = 1 -- erkekler için varsayılan saç stili
+Config.DefaultHairFemale = 0 -- kadınlar için varsayılan saç stili
